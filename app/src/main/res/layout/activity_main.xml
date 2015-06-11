@@ -1,0 +1,86 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- 主界面-->
+    <RelativeLayout
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:src="@mipmap/bg_default"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- FloatingActonBar-->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_add_white_24dp"
+            app:fabSize="normal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="70dp"
+            android:layout_marginRight="20dp"
+            app:rippleColor="#79BD4C"
+            app:elevation="6dp"
+            app:borderWidth="0dp"
+            app:pressedTranslationZ="12dp"/>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_local"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_room_white_24dp"
+            app:fabSize="normal"
+            android:layout_above="@+id/fab"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            app:backgroundTint="#79BD4C"
+            app:rippleColor="#ffffff"
+            app:elevation="6dp"
+            app:borderWidth="0dp"
+            app:pressedTranslationZ="12dp"/>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_favorite"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_favorite_white_24dp"
+            app:fabSize="normal"
+            android:layout_above="@+id/fab_local"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            app:backgroundTint="#FF4081"
+            app:rippleColor="#ffffff"
+            app:elevation="6dp"
+            app:borderWidth="0dp"
+            app:pressedTranslationZ="12dp"/>
+
+
+
+
+
+    </RelativeLayout>
+
+    <!-- 侧滑导航-->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation"
+        android:layout_gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer_menu"/>
+
+</android.support.v4.widget.DrawerLayout>

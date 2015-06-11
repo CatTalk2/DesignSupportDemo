@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@mipmap/bg_header"
+    android:paddingLeft="20dp"
+    android:paddingBottom="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="180dp">
+    <ImageView
+        android:id="@+id/photo"
+        android:src="@mipmap/photo"
+        android:layout_above="@+id/desc"
+        android:layout_marginBottom="20dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+    <TextView
+        android:id="@+id/desc"
+        android:layout_alignParentBottom="true"
+        android:text="欢迎关注个人博客 明桑Android"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginBottom="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+
+

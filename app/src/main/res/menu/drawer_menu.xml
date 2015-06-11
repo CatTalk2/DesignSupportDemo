@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:id="@+id/navigation_item1"
+            android:checkable="true"
+            android:title="热门图片"
+            android:icon="@mipmap/icon_hot"/>
+        <item android:id="@+id/navigation_item2"
+            android:checkable="true"
+            android:title="联系人"
+            android:icon="@mipmap/icon_people"/>
+        <item android:id="@+id/navigation_item3"
+            android:checkable="true"
+            android:title="图库"
+            android:icon="@mipmap/icon_photos"/>
+    </group>
+    <item android:id="@+id/navigation_sub"
+        android:title="新增功能">
+        <menu>
+            <item android:id="@+id/navigation_sub_item1"
+                android:checkable="true"
+                android:title="地图导航"
+                android:icon="@mipmap/icon_local"/>
+            <item android:id="@+id/navigation_sub_item2"
+                android:checkable="true"
+                android:title="最近热门"
+                android:icon="@mipmap/icon_event"/>
+            <item android:id="@+id/navigation_sub_item3"
+                android:checkable="true"
+                android:title="社交圈子"
+                android:icon="@mipmap/icon_communities"/>
+        </menu>
+    </item>
+
+
+</menu>
